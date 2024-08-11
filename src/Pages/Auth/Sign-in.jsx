@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import logo from "../../Logo.png";
 import { loginSuccess } from "./AuthSlice";
 import { useDispatch } from "react-redux";
 

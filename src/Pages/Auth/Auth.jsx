@@ -8,7 +8,7 @@ function Auth() {
 
   return (
     <div className=" h-screen justify-center flex flex-col text-white dark:bg-black items-center rounded">
-      <img src={logo} className="mb-4 animate-wiggle" />
+      <img src={logo} alt="logo" className="mb-4 animate-wiggle" />
       <div
         className={`  w-30 p-4 m-5 dark:bg-gray-800 border-gray-400 border-2  ${
           isLogin ? `h-2/4` : `h-2/3`

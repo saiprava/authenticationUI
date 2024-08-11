@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Thersa from "../../theresa.png";
 import Marvin from "../../kevin.png";
 import shape from "../../Shape.png";
 import chat from "../../💬.png";
+import emoji from "../../😞.png";
+import hi from "../../hi.png";
 import { useSelector } from "react-redux";
 import { selectLoginData } from "../Auth/AuthSlice";
 
@@ -46,7 +48,7 @@ function Posts() {
             </label>
             <div className="relative m-6">
               <div className="absolute w-11 h-11 bg-gray-600 rounded-full start-2 top-6 flex p-4 items-center  ml-4 pointer-events-none">
-                <img src={chat} />
+                <img src={chat} alt="hi" />
               </div>
 
               <textarea
@@ -66,6 +68,7 @@ function Posts() {
               <div className="bg-gray-600 my-8 w-full border-gray-400 rounded p-4 flex flex-col">
                 <div className="flex flex-row items-center">
                   <img
+                    alt="logo"
                     src={
                       item.name.split(" ")[0] === "Theresa" ? Thersa : Marvin
                     }
@@ -80,11 +83,20 @@ function Posts() {
                     </p>
                   </div>
                 </div>
-                <p className="border font-light text-sm border-gray-500 text-gray-500 rounded bg-black m-2 p-6">
-                  {item.body}
-                </p>
+                <div className="relative">
+                  <div className="absolute w-11 h-11 bg-gray-600 rounded-full start-2 top-11 flex p-4 items-center  ml-4 pointer-events-none">
+                    {item.name.split(" ")[0] === "Theresa" ? (
+                      <img src={hi} alt="hi" />
+                    ) : (
+                      <img src={emoji} alt="hi" />
+                    )}
+                  </div>
+                  <p className="border font-light text-sm border-gray-500 text-gray-500 rounded bg-black m-2 p-8 pl-24">
+                    {item.body}
+                  </p>
+                </div>
                 <div className="flex flex-row items-center ml-2 mt-2">
-                  <img src={shape} className="w-4 h-4 " />
+                  <img src={shape} className="w-4 h-4 " alt="hi" />
                   <p className=" text-gray-500 text-xs ml-2 font-light">
                     {item.comments} comments
                   </p>
