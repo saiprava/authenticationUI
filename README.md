@@ -18,17 +18,17 @@ This project is a front-end implementation of a user authentication interface, i
 
 1. Clone the repository
 
-### `git clone https://github.com/saiprava/authenticationUI.git`
+`git clone https://github.com/saiprava/authenticationUI.git`
 
-### `cd authenticationUI`
+`cd authenticationUI`
 
 2. Install Dependencies:
 
-### `npm install`
+`npm install`
 
 3. Run the Application:
 
-### `npm start`
+`npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
