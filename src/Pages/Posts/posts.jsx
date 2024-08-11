@@ -1,10 +1,10 @@
 import React from "react";
-import Thersa from "../../theresa.png";
-import Marvin from "../../kevin.png";
-import shape from "../../Shape.png";
-import chat from "../../💬.png";
-import emoji from "../../😞.png";
-import hi from "../../hi.png";
+import Thersa from "../../utils/theresa.png";
+import Marvin from "../../utils/kevin.png";
+import shape from "../../utils/Shape.png";
+import chat from "../../utils/💬.png";
+import emoji from "../../utils/😞.png";
+import hi from "../../utils/hi.png";
 import { useSelector } from "react-redux";
 import { selectLoginData } from "../Auth/AuthSlice";
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../Logo.png";
+import logo from "../../utils/Logo.png";
 import Login from "./Login";
 import SignIn from "./Sign-in";
 
